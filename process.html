@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insurance Coverage Levels</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .nrjCSSProgedcsf-body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .nrjCSSProgedcsf-header {
+            text-align: center;
+            margin-bottom: 60px;
+            max-width: 900px;
+        }
+
+        .nrjCSSProgedcsf-title {
+            color: #ffffff;
+            font-size: 2rem;
+            font-weight: 600;
+            line-height: 1.5;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .nrjCSSProgedcsf-highlight {
+            color: #ffd700;
+            font-weight: 700;
+        }
+
+        .nrjCSSProgedcsf-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            max-width: 1200px;
+            width: 100%;
+            padding: 0 20px;
+        }
+
+        .nrjCSSProgedcsf-card {
+            background: #ffffff;
+            border-radius: 20px;
+            padding: 40px 30px;
+            text-align: center;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .nrjCSSProgedcsf-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: linear-gradient(90deg, #667eea, #764ba2);
+        }
+
+        .nrjCSSProgedcsf-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 50px rgba(0, 0, 0, 0.25);
+        }
+
+        .nrjCSSProgedcsf-icon {
+            width: 100px;
+            height: 100px;
+            margin: 0 auto 25px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            transition: all 0.3s ease;
+        }
+
+        .nrjCSSProgedcsf-card:hover .nrjCSSProgedcsf-icon {
+            transform: scale(1.1) rotate(5deg);
+        }
+
+        .nrjCSSProgedcsf-card-title {
+            color: #2d3748;
+            font-size: 1.4rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+            line-height: 1.4;
+        }
+
+        .nrjCSSProgedcsf-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #ffffff;
+            padding: 8px 20px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-top: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        @media (max-width: 768px) {
+            .nrjCSSProgedcsf-title {
+                font-size: 1.5rem;
+            }
+
+            .nrjCSSProgedcsf-container {
+                grid-template-columns: 1fr;
+                gap: 25px;
+            }
+
+            .nrjCSSProgedcsf-card {
+                padding: 35px 25px;
+            }
+
+            .nrjCSSProgedcsf-icon {
+                width: 80px;
+                height: 80px;
+                font-size: 2.5rem;
+            }
+
+            .nrjCSSProgedcsf-card-title {
+                font-size: 1.2rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .nrjCSSProgedcsf-body {
+                padding: 20px 10px;
+            }
+
+            .nrjCSSProgedcsf-header {
+                margin-bottom: 40px;
+            }
+
+            .nrjCSSProgedcsf-title {
+                font-size: 1.2rem;
+            }
+
+            .nrjCSSProgedcsf-card {
+                padding: 30px 20px;
+            }
+
+            .nrjCSSProgedcsf-icon {
+                width: 70px;
+                height: 70px;
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body class="nrjCSSProgedcsf-body">
+    <div class="nrjCSSProgedcsf-header">
+        <h1 class="nrjCSSProgedcsf-title">
+            It's not always about the destination – that's why we have three levels of cover <span class="nrjCSSProgedcsf-highlight">for what might happen in-between.</span>
+        </h1>
+    </div>
+
+    <div class="nrjCSSProgedcsf-container">
+        <div class="nrjCSSProgedcsf-card">
+            <div class="nrjCSSProgedcsf-icon">🚗</div>
+            <h2 class="nrjCSSProgedcsf-card-title">Comprehensive Insurance</h2>
+            <div class="nrjCSSProgedcsf-badge">Full Coverage</div>
+        </div>
+
+        <div class="nrjCSSProgedcsf-card">
+            <div class="nrjCSSProgedcsf-icon">🔥</div>
+            <h2 class="nrjCSSProgedcsf-card-title">Third Party Fire & Theft</h2>
+            <div class="nrjCSSProgedcsf-badge">Mid Coverage</div>
+        </div>
+
+        <div class="nrjCSSProgedcsf-card">
+            <div class="nrjCSSProgedcsf-icon">🚙</div>
+            <h2 class="nrjCSSProgedcsf-card-title">Third Party Property Only</h2>
+            <div class="nrjCSSProgedcsf-badge">Basic Coverage</div>
+        </div>
+    </div>
+</body>
+</html>
