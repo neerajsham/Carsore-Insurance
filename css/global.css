@@ -49,6 +49,10 @@
 
  ***/
 
+
+.footer-bottom .pull-left.text-center {
+    float: none;
+}
 /* Theme Color */
 
 :root {

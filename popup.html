@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Insurance Options</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: #f5f5f5;
+            padding: 40px 20px;
+        }
+
+        .nrjInsuranceSectionNpj {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .nrjSectionTitleNpj {
+            text-align: center;
+            color: #002448;
+            font-size: 2.5rem;
+            margin-bottom: 50px;
+            font-weight: 700;
+        }
+
+        .nrjCardsContainerNpj {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+
+        .nrjCardNpj {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .nrjCardNpj:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 30px rgba(66, 152, 239, 0.3);
+        }
+
+        .nrjCardIconNpj {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, rgb(66, 152, 239), rgb(46, 120, 200));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+            font-size: 28px;
+        }
+
+        .nrjCardTitleNpj {
+            color: #002448;
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+
+        .nrjCardDescNpj {
+            color: #666;
+            font-size: 1rem;
+            line-height: 1.6;
+            margin-bottom: 25px;
+            flex-grow: 1;
+        }
+
+        .nrjCardBtnNpj {
+            background: rgb(66, 152, 239);
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.3s ease;
+            align-self: flex-start;
+        }
+
+        .nrjCardBtnNpj:hover {
+            background: rgb(46, 120, 200);
+        }
+
+        /* Popup Styles */
+        .nrjPopupOverlayNpj {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            z-index: 9999;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .nrjPopupOverlayNpj.nrjActiveNpj {
+            display: flex;
+        }
+
+        .nrjPopupBoxNpj {
+            background: white;
+            border-radius: 20px;
+            max-width: 700px;
+            width: 100%;
+            max-height: 85vh;
+            overflow-y: auto;
+            position: relative;
+            animation: nrjSlideUpNpj 0.4s ease;
+        }
+
+        @keyframes nrjSlideUpNpj {
+            from {
+                transform: translateY(50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        .nrjPopupHeaderNpj {
+            background: linear-gradient(135deg, rgb(66, 152, 239), rgb(46, 120, 200));
+            color: white;
+            padding: 25px 30px;
+            border-radius: 20px 20px 0 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        .nrjPopupTitleNpj {
+            font-size: 1.8rem;
+            font-weight: 700;
+        }
+
+        .nrjPopupCloseNpj {
+            background: rgba(255, 255, 255, 0.2);
+            border: none;
+            color: white;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            font-size: 24px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background 0.3s ease;
+        }
+
+        .nrjPopupCloseNpj:hover {
+            background: rgba(255, 255, 255, 0.3);
+        }
+
+        .nrjPopupContentNpj {
+            padding: 30px;
+        }
+
+        .nrjPopupSectionNpj {
+            margin-bottom: 30px;
+        }
+
+        .nrjPopupSectionNpj:last-child {
+            margin-bottom: 0;
+        }
+
+        .nrjPopupSubtitleNpj {
+            color: #002448;
+            font-size: 1.4rem;
+            font-weight: 600;
+            margin-bottom: 15px;
+            border-bottom: 3px solid rgb(66, 152, 239);
+            padding-bottom: 10px;
+        }
+
+        .nrjPopupTextNpj {
+            color: #444;
+            line-height: 1.8;
+            font-size: 1rem;
+            margin-bottom: 15px;
+        }
+
+        .nrjPopupListNpj {
+            list-style: none;
+            padding: 0;
+        }
+
+        .nrjPopupListNpj li {
+            color: #444;
+            line-height: 1.8;
+            margin-bottom: 12px;
+            padding-left: 30px;
+            position: relative;
+        }
+
+        .nrjPopupListNpj li:before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: rgb(66, 152, 239);
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        /* Scrollbar styling */
+        .nrjPopupBoxNpj::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        .nrjPopupBoxNpj::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            border-radius: 10px;
+        }
+
+        .nrjPopupBoxNpj::-webkit-scrollbar-thumb {
+            background: rgb(66, 152, 239);
+            border-radius: 10px;
+        }
+
+        .nrjPopupBoxNpj::-webkit-scrollbar-thumb:hover {
+            background: rgb(46, 120, 200);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .nrjSectionTitleNpj {
+                font-size: 2rem;
+                margin-bottom: 30px;
+            }
+
+            .nrjCardsContainerNpj {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            .nrjCardNpj {
+                padding: 25px;
+            }
+
+            .nrjCardTitleNpj {
+                font-size: 1.3rem;
+            }
+
+            .nrjPopupBoxNpj {
+                max-height: 90vh;
+            }
+
+            .nrjPopupTitleNpj {
+                font-size: 1.5rem;
+            }
+
+            .nrjPopupHeaderNpj {
+                padding: 20px;
+            }
+
+            .nrjPopupContentNpj {
+                padding: 20px;
+            }
+
+            .nrjPopupSubtitleNpj {
+                font-size: 1.2rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            body {
+                padding: 20px 10px;
+            }
+
+            .nrjSectionTitleNpj {
+                font-size: 1.6rem;
+            }
+
+            .nrjCardNpj {
+                padding: 20px;
+            }
+
+            .nrjCardIconNpj {
+                width: 50px;
+                height: 50px;
+                font-size: 24px;
+            }
+
+            .nrjCardTitleNpj {
+                font-size: 1.2rem;
+            }
+
+            .nrjCardDescNpj {
+                font-size: 0.95rem;
+            }
+
+            .nrjCardBtnNpj {
+                padding: 10px 20px;
+                font-size: 0.95rem;
+            }
+
+            .nrjPopupTitleNpj {
+                font-size: 1.3rem;
+            }
+
+            .nrjPopupContentNpj {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="nrjInsuranceSectionNpj">
+        <h1 class="nrjSectionTitleNpj">Choose Your Car Insurance</h1>
+        
+        <div class="nrjCardsContainerNpj">
+            <!-- NSW CTP Card -->
+            <div class="nrjCardNpj">
+                <div class="nrjCardIconNpj">🚗</div>
+                <h2 class="nrjCardTitleNpj">NSW CTP Green Slip</h2>
+                <p class="nrjCardDescNpj">Protect yourself from compensation claims and get coverage for medical treatment, loss of income, and more across Australia.</p>
+                <button class="nrjCardBtnNpj" onclick="openPopup('nsw')">Learn More</button>
+            </div>
+
+            <!-- SA CTP Card -->
+            <div class="nrjCardNpj">
+                <div class="nrjCardIconNpj">🛡️</div>
+                <h2 class="nrjCardTitleNpj">South Australia CTP</h2>
+                <p class="nrjCardDescNpj">Financial protection for you and anyone using your vehicle against causing death or injury to other road users anywhere in Australia.</p>
+                <button class="nrjCardBtnNpj" onclick="openPopup('sa')">Learn More</button>
+            </div>
+
+            <!-- Roadside Assistance Card -->
+            <div class="nrjCardNpj">
+                <div class="nrjCardIconNpj">🔧</div>
+                <h2 class="nrjCardTitleNpj">Roadside Assistance</h2>
+                <p class="nrjCardDescNpj">24/7 emergency support for flat batteries, towing, emergency fuel, flat tyres, lost keys, and caravan assistance.</p>
+                <button class="nrjCardBtnNpj" onclick="openPopup('roadside')">Learn More</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- NSW CTP Popup -->
+    <div class="nrjPopupOverlayNpj" id="nsjPopupNsw" onclick="closePopupOnOverlay(event, 'nsw')">
+        <div class="nrjPopupBoxNpj" onclick="event.stopPropagation()">
+            <div class="nrjPopupHeaderNpj">
+                <h2 class="nrjPopupTitleNpj">NSW CTP Green Slip Insurance</h2>
+                <button class="nrjPopupCloseNpj" onclick="closePopup('nsw')">×</button>
+            </div>
+            <div class="nrjPopupContentNpj">
+                <p class="nrjPopupTextNpj">At Youi, we offer a range of insurance options for drivers to choose from. That includes NSW CTP insurance (also known as a Green Slip). Ready to get started?</p>
+                
+                <div class="nrjPopupSectionNpj">
+                    <h3 class="nrjPopupSubtitleNpj">What's Included?</h3>
+                    <ul class="nrjPopupListNpj">
+                        <li><strong>Protection from compensation claims:</strong> Cover for the cost of injuries sustained by a third party in a motor accident caused by you (or the person driving your vehicle).</li>
+                        <li><strong>Your medical treatment and care:</strong> On top of medical treatment for third parties involved in the accident, limited cover may also be available for reasonable and necessary treatment and care costs for the at-fault driver.</li>
+                        <li><strong>Your loss of income:</strong> In addition to lost income for those not at fault in the accident, we may also provide limited coverage if you're the at-fault driver and need time off work due to your injuries.</li>
+                        <li><strong>Caravans and trailers:</strong> Cover for injuries caused by a trailer or caravan attached to the registered vehicle.</li>
+                        <li><strong>Australia-wide cover:</strong> Our CTP insurance will have you covered even if you're involved in an accident outside your home state or territory.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SA CTP Popup -->
+    <div class="nrjPopupOverlayNpj" id="nsjPopupSa" onclick="closePopupOnOverlay(event, 'sa')">
+        <div class="nrjPopupBoxNpj" onclick="event.stopPropagation()">
+            <div class="nrjPopupHeaderNpj">
+                <h2 class="nrjPopupTitleNpj">South Australia CTP Insurance</h2>
+                <button class="nrjPopupCloseNpj" onclick="closePopup('sa')">×</button>
+            </div>
+            <div class="nrjPopupContentNpj">
+                <p class="nrjPopupTextNpj">Choosing Youi as your Compulsory Third Party (CTP) insurer in South Australia is easy. If you're ready, you can renew your registration right now. Otherwise, nominate us for a future renewal period anytime – there's no need to wait until your current CTP policy expires.</p>
+                
+                <div class="nrjPopupSectionNpj">
+                    <h3 class="nrjPopupSubtitleNpj">What SA CTP Covers</h3>
+                    <ul class="nrjPopupListNpj">
+                        <li>Protection for you and anyone that may use your vehicle against the financial impact of causing death or injury to other road users through the use of your vehicle anywhere in Australia.</li>
+                        <li>Liability for injuries caused by a trailer that is attached to the registered vehicle.</li>
+                    </ul>
+                </div>
+
+                <div class="nrjPopupSectionNpj">
+                    <h3 class="nrjPopupSubtitleNpj">What SA CTP Does Not Cover</h3>
+                    <ul class="nrjPopupListNpj">
+                        <li>Damage to your vehicle or anything that is attached to it.</li>
+                        <li>Damage to any third party's property and/or vehicle.</li>
+                        <li>Compensation for an injured driver that is entirely at fault, with the exception of very serious, lifelong injuries which may be eligible for necessary and reasonable treatment, care and support under the Lifetime Support Scheme, regardless of fault.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Roadside Assistance Popup -->
+    <div class="nrjPopupOverlayNpj" id="nsjPopupRoadside" onclick="closePopupOnOverlay(event, 'roadside')">
+        <div class="nrjPopupBoxNpj" onclick="event.stopPropagation()">
+            <div class="nrjPopupHeaderNpj">
+                <h2 class="nrjPopupTitleNpj">Roadside Assistance</h2>
+                <button class="nrjPopupCloseNpj" onclick="closePopup('roadside')">×</button>
+            </div>
+            <div class="nrjPopupContentNpj">
+                <p class="nrjPopupTextNpj">When car trouble leaves you stranded, Youi Roadside Assist is just a phone call away – available 24/7 and included as standard with Comprehensive car and motorcycle policies, it's the number you'll want on speed dial.</p>
+                
+                <div class="nrjPopupSectionNpj">
+                    <h3 class="nrjPopupSubtitleNpj">What's Included with Youi Roadside Assist?</h3>
+                    <ul class="nrjPopupListNpj">
+                        <li><strong>Flat batteries:</strong> Our roadside service will jump-start your motorcycle or car battery. If we can't, we'll provide a replacement battery – subject to availability and for an additional cost – or tow your vehicle to safety.</li>
+                        <li><strong>Vehicle towing:</strong> If our roadside service can't get your vehicle back on the road, we'll cover the cost of towing to the nearest accredited repairer – up to 20km from the breakdown site in metropolitan areas or 50km in regional areas.</li>
+                        <li><strong>Emergency fuel:</strong> If you've run out of fuel, Youi will arrange the delivery of up to 10 litres of fuel to help you reach the nearest petrol station. For LPG or electric vehicles, we'll organise a tow to the closest service station, charging depot or safe location.</li>
+                        <li><strong>Flat tyres:</strong> If you get a flat, we'll swap it with your spare tyre. Or, if your vehicle is towable, we'll organise towing to an approved tyre outlet or the nearest safe location – up to 20km from the breakdown location in metro areas, and up to 50km in regional areas.</li>
+                        <li><strong>Lost or locked keys:</strong> If your keys are lost - but not stolen - or locked inside your vehicle, Youi car or motorcycle roadside assistance service will either arrange for the spare key to be delivered, help you gain access into the vehicle, or organise a tow if the vehicle is towable. The most we will pay for this service is $250.</li>
+                        <li><strong>Caravan and trailer assistance:</strong> If your car breaks down while towing a caravan or trailer and can't be driven, we'll cover the towing of both vehicles to the same location, as long as they're towable and you're within your car's towing limits.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function openPopup(type) {
+            const popupId = 'nsjPopup' + type.charAt(0).toUpperCase() + type.slice(1);
+            const popup = document.getElementById(popupId);
+            if (popup) {
+                popup.classList.add('nrjActiveNpj');
+                document.body.style.overflow = 'hidden';
+            }
+        }
+
+        function closePopup(type) {
+            const popupId = 'nsjPopup' + type.charAt(0).toUpperCase() + type.slice(1);
+            const popup = document.getElementById(popupId);
+            if (popup) {
+                popup.classList.remove('nrjActiveNpj');
+                document.body.style.overflow = 'auto';
+            }
+        }
+
+        function closePopupOnOverlay(event, type) {
+            if (event.target.classList.contains('nrjPopupOverlayNpj')) {
+                closePopup(type);
+            }
+        }
+
+        // Close popup on ESC key
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape') {
+                const activePopup = document.querySelector('.nrjPopupOverlayNpj.nrjActiveNpj');
+                if (activePopup) {
+                    activePopup.classList.remove('nrjActiveNpj');
+                    document.body.style.overflow = 'auto';
+                }
+            }
+        });
+    </script>
+</body>
+</html>

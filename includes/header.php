@@ -32,17 +32,17 @@
                                 <li class="current dropdown">
                                     <a href="index.php">Car & CTP</a>
                                     <ul>
-                                        <li><a class="mainIn d-flex align-items-center g-4" href="#"><img src="images/product-icon-1.webp" alt="icon"> Car Insurance</a></li>
-                                        <li><a class="mainIn d-flex align-items-center g-4" href="#"><img src="images/nsw-ctp-insurance.webp" alt="icon"> NSW CTP Green Slip Insurance</a></li>
-                                        <li><a class="mainIn d-flex align-items-center g-4" href="#"><img src="images/sa-ctp-insurance.webp" alt="icon"> SA CTP Insurance</a></li>
-                                        <li><a class="mainIn d-flex align-items-center g-4" href="#"><img src="images/roadside-assistance.webp  " alt="icon"> Roadside Assistance </a></li>
+                                        <li><a class="mainIn d-flex align-items-center g-4" href="#Services"><img src="images/product-icon-1.webp" alt="icon"> Car Insurance</a></li>
+                                        <li><a class="mainIn d-flex align-items-center g-4" href="#ctp-car"><img src="images/nsw-ctp-insurance.webp" alt="icon"> NSW CTP Green Slip Insurance</a></li>
+                                        <li><a class="mainIn d-flex align-items-center g-4" href="#ctp-car"><img src="images/sa-ctp-insurance.webp" alt="icon"> SA CTP Insurance</a></li>
+                                        <li><a class="mainIn d-flex align-items-center g-4" href="#ctp-car"><img src="images/roadside-assistance.webp  " alt="icon"> Roadside Assistance </a></li>
                                     </ul>
                                 </li>
                                 <li>
-                                    <a href="about.php">About Us</a>
+                                    <a href="#aboutUs">About Us</a>
                                 </li>
                                 <li class="dropdown">
-                                    <a href="#">Services</a>
+                                    <a href="#Services">Services</a>
                                     <!-- <ul>
                                         <li><a href="services.php">Services</a></li>
                                         <li>
@@ -79,7 +79,8 @@
                                         <li><a href="not-found.php">Not Found</a></li>
                                     </ul>
                                 </li> -->
-                                <li><a href="contact.php">Contact us</a></li>
+                                <!-- <li><a href="contact.php">Contact us</a></li> -->
+                                <li><a href="javascript:void(0);" onclick="openContactForm()">Contact us</a></li>
                             </ul>
                         </div>
                     </nav>
@@ -89,7 +90,7 @@
                         <!-- Phone Btn -->
                         <div class="phone-box">
                             <div class="box-inner">
-                                <a class="phone" href="tel:+1555-89-7965">+1555 89 7965
+                                <a class="phone" href="tel:+919717767901">+91 9717767901
                                     <span class="icon flaticon-call-2"></span></a>
                             </div>
                         </div>
@@ -124,7 +125,7 @@
                     <!-- Phone Btn -->
                     <div class="phone-box">
                         <div class="box-inner">
-                            <a class="phone" href="tel:+1555-89-7965">+1555 89 7965 <span
+                            <a class="phone" href="tel:+91 9717767901">+91 9717767901 <span
                                     class="icon flaticon-call-2"></span></a>
                         </div>
                     </div>

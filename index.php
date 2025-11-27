@@ -2,6 +2,7 @@
 <html class="no-js" lang="en">
 
 <?php include 'includes/head.php'; ?>
+<?php include 'contact-form.php'; ?>
 
 <body>
     <div class="main-homepage">
@@ -32,7 +33,7 @@
             <!-- End Loading -->
 
             <!-- Main Header-->
-            <?php  include 'includes/header.php'; ?>
+            <?php include 'includes/header.php'; ?>
             <!-- End Main Header -->
 
             <!-- Main Slider Section -->
@@ -60,10 +61,11 @@
                                         <div class="title">WELCOME TO CARSORE</div>
                                         <h1>Drive with Confidence, Stay Fully Protected</h1>
                                         <div class="text">
-                                            Get the right car insurance that covers accidents, damages, theft, and more — all at the best price with quick claim support.
+                                            Get the right car insurance that covers accidents, damages, theft, and more
+                                            — all at the best price with quick claim support.
                                         </div>
                                         <div class="btns-box clearfix">
-                                            <a class="btn-style-one theme-btn" href="about.html"><span class="txt">Read
+                                            <a class="btn-style-one theme-btn" href="#aboutUs"><span class="txt">Read
                                                     More
                                                     <i class="fa fa-arrow-circle-right"></i></span></a>
                                             <a href="https://www.youtube.com/watch?v=kxPCFljwJws"
@@ -102,10 +104,11 @@
                                         <div class="title">WELCOME TO CARSORE</div>
                                         <h1>Instant Car Insurance with Zero Hassle</h1>
                                         <div class="text">
-                                            Buy or renew your policy in minutes. No paperwork, no delays — just fast, reliable coverage tailored to your vehicle.
+                                            Buy or renew your policy in minutes. No paperwork, no delays — just fast,
+                                            reliable coverage tailored to your vehicle.
                                         </div>
                                         <div class="btns-box clearfix">
-                                            <a class="btn-style-one theme-btn" href="about.html"><span class="txt">Read
+                                            <a class="btn-style-one theme-btn" href="#aboutUs"><span class="txt">Read
                                                     More
                                                     <i class="fa fa-arrow-circle-right"></i></span></a>
                                             <a href="https://www.youtube.com/watch?v=kxPCFljwJws"
@@ -142,10 +145,11 @@
                                         <div class="title">WELCOME TO CARSORE</div>
                                         <h1>Smart Coverage for Every Car Owner</h1>
                                         <div class="text">
-                                            From basic protection to full comprehensive plans, choose a policy that fits your needs and keeps your journey worry-free.
+                                            From basic protection to full comprehensive plans, choose a policy that fits
+                                            your needs and keeps your journey worry-free.
                                         </div>
                                         <div class="btns-box clearfix">
-                                            <a class="btn-style-one theme-btn" href="about.html"><span class="txt">Read
+                                            <a class="btn-style-one theme-btn" href="#aboutUs"><span class="txt">Read
                                                     More
                                                     <i class="fa fa-arrow-circle-right"></i></span></a>
                                             <a href="https://www.youtube.com/watch?v=kxPCFljwJws"
@@ -178,7 +182,7 @@
             <!-- End Main Slider Section -->
 
             <!-- About Section -->
-            <section class="about-section" style="background-image: url(images/background/pattern-2.png)">
+            <section class="about-section" id="aboutUs" style="background-image: url(images/background/pattern-2.png)">
                 <!-- <div
             class="top-pattern-layer"
             style="background-image: url(images/background/pattern-1.png)"
@@ -213,7 +217,10 @@
                                         you a trusty insurance on your veicle.
                                     </div>
                                     <div class="text">
-                                        At Carsore, we aim to make car insurance simple, trusted, and truly customer-friendly. We understand that your car is more than just a vehicle - it’s a part of your everyday life. That’s why we provide coverage that keeps you protected on every journey, with complete peace of mind.
+                                        At Carsore, we aim to make car insurance simple, trusted, and truly
+                                        customer-friendly. We understand that your car is more than just a vehicle -
+                                        it’s a part of your everyday life. That’s why we provide coverage that keeps you
+                                        protected on every journey, with complete peace of mind.
                                     </div>
                                     <div class="author-box clearfix">
                                         <div class="box-inner">
@@ -232,13 +239,40 @@
                         </div>
                     </div>
                 </div>
+                <div class="nrhj_threBox">
+                    <div class="nrhj_threBox-item">
+                        <div class="nrhj_threBox-icon">
+                            <img src="images/car-comprehensive.webp" alt="image">
+                        </div>
+                        <div class="nrhj_threBox-content">
+                            <h3 class="nrhj_threBox-title">Comprehensive Insurance</h3>
+                        </div>
+                    </div>
+
+                    <div class="nrhj_threBox-item">
+                        <div class="nrhj_threBox-icon">
+                            <img src="images/car-third-party-fire-and-theft.webp" alt="image">
+                        </div>
+                        <div class="nrhj_threBox-content">
+                            <h3 class="nrhj_threBox-title">Third Party Fire & Theft</h3>
+                        </div>
+                    </div>
+
+                    <div class="nrhj_threBox-item">
+                        <div class="nrhj_threBox-icon">
+                            <img src="images/car-third-party-property-only.webp" alt="image">
+                        </div>
+                        <div class="nrhj_threBox-content">
+                            <h3 class="nrhj_threBox-title">Third Party Property Only</h3>
+                        </div>
+                    </div>
+                </div>
             </section>
             <!-- End About Section -->
 
             <!-- Services Section -->
-            <section class="services-section">
+            <section class="services-section" id="Services">
                 <div class="auto-container">
-                    <!-- Sec Title -->
                     <div class="sec-title centered">
                         <div class="title">our services</div>
                         <h2>
@@ -246,6 +280,7 @@
                             for our clients.
                         </h2>
                     </div>
+
                     <!-- End Sec Title -->
                     <div class="inner-container">
                         <div class="section-icons-outer parallax-scene-3">
@@ -267,9 +302,12 @@
                                     <div class="lower-content">
                                         <h4><a href="services-detail.html">24/7 roadside assistance</a></h4>
                                         <div class="text">
-                                            Our 24/7 roadside assistance ensures that no matter where you are, help is just a call away — from flat tyres to emergency fuel delivery, we’ve got you covered.
+                                            Our 24/7 roadside assistance ensures that no matter where you are, help is
+                                            just
+                                            a call away — from flat tyres to emergency fuel delivery, we’ve got you
+                                            covered.
                                         </div>
-                                        <a href="services-detail.html" class="read-more">Read More</a>
+                                        <a href="javascript:void(0);" onclick="openContactForm()" class="read-more">Read More</a>
                                     </div>
                                 </div>
                             </div>
@@ -278,15 +316,18 @@
                             <div class="service-block">
                                 <div class="inner-box">
                                     <div class="image">
-                                        <a href="services-detail.html"><img src="images/resource/repairs-you-can-count-on.webp"
-                                                alt="" /></a>
+                                        <a href="services-detail.html"><img
+                                                src="images/resource/repairs-you-can-count-on.webp" alt="" /></a>
                                     </div>
                                     <div class="lower-content">
                                         <h4><a href="services-detail.html">Repairs you can count on</a></h4>
                                         <div class="text">
-                                            From minor dents to major damages, Carsore ensures reliable, fast, and high-quality repair services. With trusted partners and expert technicians, your vehicle is in safe hands - every time.
+                                            From minor dents to major damages, Carsore ensures reliable, fast, and
+                                            high-quality repair services. With trusted partners and expert technicians,
+                                            your
+                                            vehicle is in safe hands - every time.
                                         </div>
-                                        <a href="services-detail.html" class="read-more">Read More</a>
+                                        <a href="javascript:void(0);" onclick="openContactForm()" class="read-more">Read More</a>
                                     </div>
                                 </div>
                             </div>
@@ -295,17 +336,18 @@
                             <div class="service-block">
                                 <div class="inner-box">
                                     <div class="image">
-                                        <a href="services-detail.html"><img src="images/resource/fast claims-2.webp"
+                                        <a href="javascript:void(0);" onclick="openContactForm()"><img src="images/resource/fast claims-2.webp"
                                                 alt="" /></a>
                                     </div>
                                     <div class="lower-content">
                                         <h4>
-                                            <a href="services-detail.html">Fast Phone Call Pick-Up Times</a>
+                                            <a href="javascript:void(0);" onclick="openContactForm()">Fast Phone Call Pick-Up Times</a>
                                         </h4>
                                         <div class="text">
-                                            Our team answers your calls promptly, ensuring you get immediate help and solutions whenever you reach out.
+                                            Our team answers your calls promptly, ensuring you get immediate help and
+                                            solutions whenever you reach out.
                                         </div>
-                                        <a href="services-detail.html" class="read-more">Read More</a>
+                                        <a href="javascript:void(0);" onclick="openContactForm()" class="read-more">Read More</a>
                                     </div>
                                 </div>
                             </div>
@@ -314,15 +356,38 @@
                             <div class="service-block">
                                 <div class="inner-box">
                                     <div class="image">
-                                        <a href="services-detail.html"><img src="images/resource/new-car-replacement.webp"
+                                        <a href="javascript:void(0);" onclick="openContactForm()"><img
+                                                src="images/resource/new-car-replacement.webp" alt="" /></a>
+                                    </div>
+                                    <div class="lower-content">
+                                        <h4><a href="javascript:void(0);" onclick="openContactForm()">New Car Replacement</a></h4>
+                                        <div class="text">
+                                            Drive with confidence knowing that in case of total loss or major damage,
+                                            Carsore provides quick and hassle-free new car replacement, keeping you on
+                                            the
+                                            road without worry
+                                        </div>
+                                        <a href="javascript:void(0);" onclick="openContactForm()" class="read-more">Read More</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Service Block -->
+                            <div class="service-block">
+                                <div class="inner-box">
+                                    <div class="image">
+                                        <a href="javascript:void(0);" onclick="openContactForm()"><img src="images/resource/towroadside.webp"
                                                 alt="" /></a>
                                     </div>
                                     <div class="lower-content">
-                                        <h4><a href="services-detail.html">New Car Replacement</a></h4>
+                                        <h4><a href="javascript:void(0);" onclick="openContactForm()">Towing Costs, Sorted</a></h4>
                                         <div class="text">
-                                            Drive with confidence knowing that in case of total loss or major damage, Carsore provides quick and hassle-free new car replacement, keeping you on the road without worry
+                                            With Carsore, unexpected towing expenses are no longer a worry. Our car
+                                            insurance plans cover towing costs efficiently, so you can get back on the
+                                            road
+                                            without any extra burden.
                                         </div>
-                                        <a href="services-detail.html" class="read-more">Read More</a>
+                                        <a href="javascript:void(0);" onclick="openContactForm()" class="read-more">Read More</a>
                                     </div>
                                 </div>
                             </div>
@@ -331,34 +396,19 @@
                             <div class="service-block">
                                 <div class="inner-box">
                                     <div class="image">
-                                        <a href="services-detail.html"><img src="images/resource/towroadside.webp"
-                                                alt="" /></a>
-                                    </div>
-                                    <div class="lower-content">
-                                        <h4><a href="services-detail.html">Towing Costs, Sorted</a></h4>
-                                        <div class="text">
-                                            With Carsore, unexpected towing expenses are no longer a worry. Our car insurance plans cover towing costs efficiently, so you can get back on the road without any extra burden.
-                                        </div>
-                                        <a href="services-detail.html" class="read-more">Read More</a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Service Block -->
-                            <div class="service-block">
-                                <div class="inner-box">
-                                    <div class="image">
-                                        <a href="services-detail.html"><img src="images/resource/hire-car.webp"
+                                        <a href="javascript:void(0);" onclick="openContactForm()"><img src="images/resource/hire-car.webp"
                                                 alt="" /></a>
                                     </div>
                                     <div class="lower-content">
                                         <h4>
-                                            <a href="services-detail.html">Hire Car to Keep You Moving</a>
+                                            <a href="javascript:void(0);" onclick="openContactForm()">Hire Car to Keep You Moving</a>
                                         </h4>
                                         <div class="text">
-                                           Even if your car is under repair, Carsore ensures you stay on the move with our hassle-free hire car service - so your plans are never delayed.
+                                            Even if your car is under repair, Carsore ensures you stay on the move with
+                                            our
+                                            hassle-free hire car service - so your plans are never delayed.
                                         </div>
-                                        <a href="services-detail.html" class="read-more">Read More</a>
+                                        <a href="javascript:void(0);" onclick="openContactForm()" class="read-more">Read More</a>
                                     </div>
                                 </div>
                             </div>
@@ -367,15 +417,17 @@
                             <div class="service-block">
                                 <div class="inner-box">
                                     <div class="image">
-                                        <a href="services-detail.html"><img src="images/resource/claim-online.webp"
+                                        <a href="javascript:void(0);" onclick="openContactForm()"><img src="images/resource/claim-online.webp"
                                                 alt="" /></a>
                                     </div>
                                     <div class="lower-content">
-                                        <h4><a href="services-detail.html">Claim Online, Anytime</a></h4>
+                                        <h4><a href="javascript:void(0);" onclick="openContactForm()">Claim Online, Anytime</a></h4>
                                         <div class="text">
-                                            With Carsore, filing a claim is quick and convenient. Submit your claim online anytime, from anywhere, and get faster processing without any hassle.
+                                            With Carsore, filing a claim is quick and convenient. Submit your claim
+                                            online
+                                            anytime, from anywhere, and get faster processing without any hassle.
                                         </div>
-                                        <a href="services-detail.html" class="read-more">Read More</a>
+                                        <a href="javascript:void(0);" onclick="openContactForm()" class="read-more">Read More</a>
                                     </div>
                                 </div>
                             </div>
@@ -384,15 +436,17 @@
                             <div class="service-block">
                                 <div class="inner-box">
                                     <div class="image">
-                                        <a href="services-detail.html"><img src="images/resource/one-event-one-excess.webp"
-                                                alt="" /></a>
+                                        <a href="javascript:void(0);" onclick="openContactForm()"><img
+                                                src="images/resource/one-event-one-excess.webp" alt="" /></a>
                                     </div>
                                     <div class="lower-content">
-                                        <h4><a href="services-detail.html">One Event, One Excess</a></h4>
+                                        <h4><a href="javascript:void(0);" onclick="openContactForm()">One Event, One Excess</a></h4>
                                         <div class="text">
-                                            With Carsore, you pay just one excess per incident — no hidden charges, no surprises. Simple, transparent coverage that keeps your insurance worry-free.
+                                            With Carsore, you pay just one excess per incident — no hidden charges, no
+                                            surprises. Simple, transparent coverage that keeps your insurance
+                                            worry-free.
                                         </div>
-                                        <a href="services-detail.html" class="read-more">Read More</a>
+                                        <a href="javascript:void(0);" onclick="openContactForm()" class="read-more">Read More</a>
                                     </div>
                                 </div>
                             </div>
@@ -499,30 +553,33 @@
                             <div class="content-column col-lg-6 col-md-12 col-sm-12">
                                 <div class="inner-column">
                                     <div class="text">
-                                        Lorem Ipsum is simply dummy text of the printing and
-                                        typesetting industry. Lorem Ipsum has been the simply
-                                        dummy text of industry's standard dummy, lorem ipsum
-                                        dolor.
+                                        We offer quick quotes, maximum discounts, and easy online or phone purchase -
+                                        making
+                                        car insurance simple and affordable.
                                     </div>
                                     <div class="list-outer">
                                         <ul class="choose-list">
                                             <li>
                                                 <span class="number">1</span>
                                                 <strong>Compare personalized quotes</strong>
-                                                Answer a couple of questions, we'll provide accurate
-                                                live
+                                                Get instant, accurate quotes tailored to your needs. Just answer a few
+                                                simple questions and compare the best plans side by side—saving your
+                                                time
+                                                and money effortlessly.
                                             </li>
                                             <li>
                                                 <span class="number">2</span>
-                                                <strong>Get all discounts in one place</strong>
-                                                Answer a couple of questions, we'll provide accurate
-                                                live
+                                                <strong>All discounts in one place</strong>
+                                                Never miss a saving! We collect all available offers, discounts, and
+                                                special
+                                                deals in one place so you get maximum benefits on your car insurance.
                                             </li>
                                             <li>
                                                 <span class="number">3</span>
                                                 <strong>Buy online or on the phone</strong>
-                                                Answer a couple of questions, we'll provide accurate
-                                                live
+                                                Choose what’s convenient for you complete your purchase online in
+                                                minutes or
+                                                get expert assistance over a quick call. Fast, simple, and hassle-free.
                                             </li>
                                         </ul>
                                     </div>
@@ -714,15 +771,15 @@
                                                     <span class="icon icon-plus fa fa-plus"></span>
                                                     <span class="icon icon-minus fa fa-minus"></span>
                                                 </div>
-                                                1. Compare personalized quotes?
+                                                What services do you provide?
                                             </div>
                                             <div class="acc-content">
                                                 <div class="content">
                                                     <div class="text">
-                                                        Lorem Ipsum is simply dummy text of the printing
-                                                        and typesetting industry. Lorem Ipsum has been the
-                                                        industry's standard dummy text ever since the
-                                                        1500s, when an unknown printer took a galley
+                                                        We offer comprehensive car insurance solutions designed to make
+                                                        coverage simple, reliable, and customer-friendly. Our services
+                                                        aim to protect your vehicle and give you peace of mind on every
+                                                        journey.
                                                     </div>
                                                 </div>
                                             </div>
@@ -735,15 +792,13 @@
                                                     <span class="icon icon-plus fa fa-plus"></span>
                                                     <span class="icon icon-minus fa fa-minus"></span>
                                                 </div>
-                                                2. Compare personalized quotes?
+                                                How much can I save on car insurance?
                                             </div>
                                             <div class="acc-content current">
                                                 <div class="content">
                                                     <div class="text">
-                                                        Lorem Ipsum is simply dummy text of the printing
-                                                        and typesetting industry. Lorem Ipsum has been the
-                                                        industry's standard dummy text ever since the
-                                                        1500s, when an unknown printer took a galley
+                                                        Depending on your vehicle type and chosen coverage, you can
+                                                        benefit from up to 25% reduction in insurance rates.
                                                     </div>
                                                 </div>
                                             </div>
@@ -756,15 +811,15 @@
                                                     <span class="icon icon-plus fa fa-plus"></span>
                                                     <span class="icon icon-minus fa fa-minus"></span>
                                                 </div>
-                                                3. Compare personalized quotes?
+                                                Why choose our insurance services?
                                             </div>
                                             <div class="acc-content">
                                                 <div class="content">
                                                     <div class="text">
-                                                        Lorem Ipsum is simply dummy text of the printing
-                                                        and typesetting industry. Lorem Ipsum has been the
-                                                        industry's standard dummy text ever since the
-                                                        1500s, when an unknown printer took a galley
+                                                        We understand that your car is more than just a vehicle – it’s
+                                                        an essential part of your daily life. Our insurance plans are
+                                                        designed to keep you protected, ensuring minimal disruption in
+                                                        case of accidents or unforeseen events.
                                                     </div>
                                                 </div>
                                             </div>
@@ -777,15 +832,14 @@
                                                     <span class="icon icon-plus fa fa-plus"></span>
                                                     <span class="icon icon-minus fa fa-minus"></span>
                                                 </div>
-                                                4. Compare personalized quotes?
+                                                What types of coverage are included?
                                             </div>
                                             <div class="acc-content">
                                                 <div class="content">
                                                     <div class="text">
-                                                        Lorem Ipsum is simply dummy text of the printing
-                                                        and typesetting industry. Lorem Ipsum has been the
-                                                        industry's standard dummy text ever since the
-                                                        1500s, when an unknown printer took a galley
+                                                        Our insurance policies cover a wide range of services, including
+                                                        roadside assistance, repair services, towing cost coverage, hire
+                                                        car options, and fast claim processing.
                                                     </div>
                                                 </div>
                                             </div>
@@ -812,15 +866,15 @@
             <!-- End Faq's Section -->
 
             <!-- Awards Section -->
-            <section class="awards-section">
+            <section class="awards-section" id="ctp-car">
                 <div class="auto-container">
                     <!-- Sec Title -->
                     <div class="sec-title light centered">
-                        <div class="title">We Achieved</div>
-                        <h2>Awards & Recognition</h2>
+                        <div class="title">CAR & CTP</div>
+                        <h2>CTP Cover + 24/7 Roadside Assist</h2>
                     </div>
                     <!-- End Sec Title -->
-                    <div class="inner-container">
+                    <!-- <div class="inner-container">
                         <div class="section-icons-outer parallax-scene-8">
                             <div data-depth="0.20" class="icon-layer"
                                 style="background-image: url(images/icons/icon-1.png)"></div>
@@ -828,11 +882,9 @@
                                 style="background-image: url(images/background/pattern-3.png)"></div>
                         </div>
                         <div class="row clearfix">
-                            <!-- blocks Column -->
                             <div class="blocks-column col-lg-6 cl-md-12 col-sm-12">
                                 <div class="inner-column">
                                     <div class="row clearfix">
-                                        <!-- Award Block -->
                                         <div class="award-block col-lg-6 col-md-6 col-sm-12">
                                             <div class="inner-box wow fadeInLeft" data-wow-delay="0ms"
                                                 data-wow-duration="1500ms">
@@ -847,7 +899,6 @@
                                             </div>
                                         </div>
 
-                                        <!-- Award Block -->
                                         <div class="award-block col-lg-6 col-md-6 col-sm-12">
                                             <div class="inner-box wow fadeInLeft" data-wow-delay="250ms"
                                                 data-wow-duration="1500ms">
@@ -862,7 +913,6 @@
                                             </div>
                                         </div>
 
-                                        <!-- Award Block -->
                                         <div class="award-block col-lg-6 col-md-6 col-sm-12">
                                             <div class="inner-box wow fadeInLeft" data-wow-delay="0ms"
                                                 data-wow-duration="1500ms">
@@ -877,7 +927,6 @@
                                             </div>
                                         </div>
 
-                                        <!-- Award Block -->
                                         <div class="award-block col-lg-6 col-md-6 col-sm-12">
                                             <div class="inner-box wow fadeInLeft" data-wow-delay="250ms"
                                                 data-wow-duration="1500ms">
@@ -895,7 +944,6 @@
                                 </div>
                             </div>
 
-                            <!-- Image Column -->
                             <div class="image-column col-lg-6 cl-md-12 col-sm-12">
                                 <div class="inner-column wow fadeInRight" data-wow-delay="0ms"
                                     data-wow-duration="1500ms">
@@ -904,6 +952,157 @@
                                         <span class="triangle-two"></span>
                                         <img src="images/resource/award.jpg" alt="" />
                                     </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                    <div class="nrjInsuranceSectionNpj">
+                        <div class="nrjCardsContainerNpj">
+                            <!-- NSW CTP Card -->
+                            <div class="nrjCardNpj">
+                                <div class="nrjCardIconNpj"><img src="images/nsw-ctp-insurance.webp" alt="img"></div>
+                                <h2 class="nrjCardTitleNpj">NSW CTP Green Slip</h2>
+                                <p class="nrjCardDescNpj">Protect yourself from compensation claims and get coverage for
+                                    medical treatment, loss of income, and more across Australia.</p>
+                                <button class="nrjCardBtnNpj" data-popup="nsw">Learn More</button>
+                            </div>
+
+                            <!-- SA CTP Card -->
+                            <div class="nrjCardNpj">
+                                <div class="nrjCardIconNpj"><img src="images/sa-ctp-insurance.webp" alt="img"></div>
+                                <h2 class="nrjCardTitleNpj">South Australia CTP</h2>
+                                <p class="nrjCardDescNpj">Financial protection for you and anyone using your vehicle
+                                    against causing death or injury to other road users anywhere in Australia.</p>
+                                <button class="nrjCardBtnNpj" data-popup="sa">Learn More</button>
+                            </div>
+
+                            <!-- Roadside Assistance Card -->
+                            <div class="nrjCardNpj">
+                                <div class="nrjCardIconNpj"><img src="images/roadside-assistance.webp" alt="img"></div>
+                                <h2 class="nrjCardTitleNpj">Roadside Assistance</h2>
+                                <p class="nrjCardDescNpj">24/7 emergency support for flat batteries, towing, emergency
+                                    fuel, flat tyres, lost keys, and caravan assistance.</p>
+                                <button class="nrjCardBtnNpj" data-popup="roadside">Learn More</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- NSW CTP Popup -->
+                    <div class="nrjPopupOverlayNpj" id="nsjPopupNsw">
+                        <div class="nrjPopupBoxNpj">
+                            <div class="nrjPopupHeaderNpj">
+                                <h2 class="nrjPopupTitleNpj">NSW CTP Green Slip Insurance</h2>
+                                <button class="nrjPopupCloseNpj" data-close="nsw">×</button>
+                            </div>
+                            <div class="nrjPopupContentNpj">
+                                <p class="nrjPopupTextNpj">At Youi, we offer a range of insurance options for drivers to
+                                    choose from. That includes NSW CTP insurance (also known as a Green Slip). Ready to
+                                    get started?</p>
+
+                                <div class="nrjPopupSectionNpj">
+                                    <h3 class="nrjPopupSubtitleNpj">What's Included?</h3>
+                                    <ul class="nrjPopupListNpj">
+                                        <li><strong>Protection from compensation claims:</strong> Cover for the cost of
+                                            injuries sustained by a third party in a motor accident caused by you (or
+                                            the person driving your vehicle).</li>
+                                        <li><strong>Your medical treatment and care:</strong> On top of medical
+                                            treatment for third parties involved in the accident, limited cover may also
+                                            be available for reasonable and necessary treatment and care costs for the
+                                            at-fault driver.</li>
+                                        <li><strong>Your loss of income:</strong> In addition to lost income for those
+                                            not at fault in the accident, we may also provide limited coverage if you're
+                                            the at-fault driver and need time off work due to your injuries.</li>
+                                        <li><strong>Caravans and trailers:</strong> Cover for injuries caused by a
+                                            trailer or caravan attached to the registered vehicle.</li>
+                                        <li><strong>Australia-wide cover:</strong> Our CTP insurance will have you
+                                            covered even if you're involved in an accident outside your home state or
+                                            territory.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- SA CTP Popup -->
+                    <div class="nrjPopupOverlayNpj" id="nsjPopupSa">
+                        <div class="nrjPopupBoxNpj">
+                            <div class="nrjPopupHeaderNpj">
+                                <h2 class="nrjPopupTitleNpj">South Australia CTP Insurance</h2>
+                                <button class="nrjPopupCloseNpj" data-close="sa">×</button>
+                            </div>
+                            <div class="nrjPopupContentNpj">
+                                <p class="nrjPopupTextNpj">Choosing Youi as your Compulsory Third Party (CTP) insurer in
+                                    South Australia is easy. If you're ready, you can renew your registration right now.
+                                    Otherwise, nominate us for a future renewal period anytime – there's no need to wait
+                                    until your current CTP policy expires.</p>
+
+                                <div class="nrjPopupSectionNpj">
+                                    <h3 class="nrjPopupSubtitleNpj">What SA CTP Covers</h3>
+                                    <ul class="nrjPopupListNpj">
+                                        <li>Protection for you and anyone that may use your vehicle against the
+                                            financial impact of causing death or injury to other road users through the
+                                            use of your vehicle anywhere in Australia.</li>
+                                        <li>Liability for injuries caused by a trailer that is attached to the
+                                            registered vehicle.</li>
+                                    </ul>
+                                </div>
+
+                                <div class="nrjPopupSectionNpj">
+                                    <h3 class="nrjPopupSubtitleNpj">What SA CTP Does Not Cover</h3>
+                                    <ul class="nrjPopupListNpj">
+                                        <li>Damage to your vehicle or anything that is attached to it.</li>
+                                        <li>Damage to any third party's property and/or vehicle.</li>
+                                        <li>Compensation for an injured driver that is entirely at fault, with the
+                                            exception of very serious, lifelong injuries which may be eligible for
+                                            necessary and reasonable treatment, care and support under the Lifetime
+                                            Support Scheme, regardless of fault.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Roadside Assistance Popup -->
+                    <div class="nrjPopupOverlayNpj" id="nsjPopupRoadside">
+                        <div class="nrjPopupBoxNpj">
+                            <div class="nrjPopupHeaderNpj">
+                                <h2 class="nrjPopupTitleNpj">Roadside Assistance</h2>
+                                <button class="nrjPopupCloseNpj" data-close="roadside">×</button>
+                            </div>
+                            <div class="nrjPopupContentNpj">
+                                <p class="nrjPopupTextNpj">When car trouble leaves you stranded, Youi Roadside Assist is
+                                    just a phone call away – available 24/7 and included as standard with Comprehensive
+                                    car and motorcycle policies, it's the number you'll want on speed dial.</p>
+
+                                <div class="nrjPopupSectionNpj">
+                                    <h3 class="nrjPopupSubtitleNpj">What's Included with Youi Roadside Assist?</h3>
+                                    <ul class="nrjPopupListNpj">
+                                        <li><strong>Flat batteries:</strong> Our roadside service will jump-start your
+                                            motorcycle or car battery. If we can't, we'll provide a replacement battery
+                                            – subject to availability and for an additional cost – or tow your vehicle
+                                            to safety.</li>
+                                        <li><strong>Vehicle towing:</strong> If our roadside service can't get your
+                                            vehicle back on the road, we'll cover the cost of towing to the nearest
+                                            accredited repairer – up to 20km from the breakdown site in metropolitan
+                                            areas or 50km in regional areas.</li>
+                                        <li><strong>Emergency fuel:</strong> If you've run out of fuel, Youi will
+                                            arrange the delivery of up to 10 litres of fuel to help you reach the
+                                            nearest petrol station. For LPG or electric vehicles, we'll organise a tow
+                                            to the closest service station, charging depot or safe location.</li>
+                                        <li><strong>Flat tyres:</strong> If you get a flat, we'll swap it with your
+                                            spare tyre. Or, if your vehicle is towable, we'll organise towing to an
+                                            approved tyre outlet or the nearest safe location – up to 20km from the
+                                            breakdown location in metro areas, and up to 50km in regional areas.</li>
+                                        <li><strong>Lost or locked keys:</strong> If your keys are lost - but not stolen
+                                            - or locked inside your vehicle, Youi car or motorcycle roadside assistance
+                                            service will either arrange for the spare key to be delivered, help you gain
+                                            access into the vehicle, or organise a tow if the vehicle is towable. The
+                                            most we will pay for this service is $250.</li>
+                                        <li><strong>Caravan and trailer assistance:</strong> If your car breaks down
+                                            while towing a caravan or trailer and can't be driven, we'll cover the
+                                            towing of both vehicles to the same location, as long as they're towable and
+                                            you're within your car's towing limits.</li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
@@ -1358,7 +1557,53 @@
     <!-- End pagewrapper -->
 
 
-</body>
 
+    <!-- Contact Form Popup -->
+    <div id="contactNSFormPopup" class="contactNSFormOverlay">
+        <div class="contactNSFormContainer">
+            <button class="contactNSFormClose" onclick="closeContactForm()">&times;</button>
+            <h2 class="contactNSFormTitle">Contact Us</h2>
+
+            <form id="contactNSForm" action="process-contact.php" method="POST">
+                <div class="contactNSFormGroup">
+                    <label for="contactNSFullName">Full Name *</label>
+                    <input type="text" id="contactNSFullName" name="full_name" class="contactNSFormInput" required>
+                </div>
+
+                <div class="contactNSFormGroup">
+                    <label for="contactNSEmail">Email *</label>
+                    <input type="email" id="contactNSEmail" name="email" class="contactNSFormInput" required>
+                </div>
+
+                <div class="contactNSFormGroup">
+                    <label for="contactNSPhone">Phone Number *</label>
+                    <input type="tel" id="contactNSPhone" name="phone" class="contactNSFormInput" required>
+                </div>
+
+                <div class="contactNSFormGroup">
+                    <label for="contactNSInsurance">Insurance Type *</label>
+                    <select id="contactNSInsurance" name="insurance_type" class="contactNSFormSelect" required>
+                        <option value="">Select Insurance Type</option>
+                        <option value="STP">STP</option>
+                        <option value="CTP">CTP</option>
+                        <option value="Others">Others</option>
+                    </select>
+                </div>
+
+                <div class="contactNSFormGroup">
+                    <label for="contactNSMessage">Message *</label>
+                    <textarea id="contactNSMessage" name="message" class="contactNSFormTextarea" rows="5"
+                        required></textarea>
+                </div>
+
+                <button type="submit" class="contactNSFormSubmitBtn">Submit</button>
+
+                <div id="contactNSFormResponse" class="contactNSFormResponse"></div>
+            </form>
+        </div>
+    </div>
+
+
+</body>
 
 </html>

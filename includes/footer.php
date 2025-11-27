@@ -12,7 +12,7 @@
                     <div class="inner-column">
                         <span class="icon flaticon-call-2"></span>
                         call now<br />
-                        <a href="tel:+10909876534">+10909876534</a>
+                        <a href="tel:+919717767901">+91 9717767901</a>
                     </div>
                 </div>
 
@@ -144,18 +144,18 @@
 
         <div class="footer-bottom">
             <div class="clearfix">
-                <div class="pull-left">
+                <div class="pull-left text-center">
                     <div class="copyright">
                         Copyright &copy; 2021. All rights reserved by <br />
                         <span>Carsore Company.</span>
                     </div>
                 </div>
-                <div class="pull-right">
+                <!-- <div class="pull-right">
                     <ul class="footer-nav">
                         <li><a href="privacy.html">Privacy Policy</a></li>
                         <li><a href="terms.html">Terms & Condition</a></li>
                     </ul>
-                </div>
+                </div> -->
             </div>
         </div>
     </div>
@@ -181,3 +181,5 @@
 <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
 <script src="js/script.js"></script>
 <script src="js/color-settings.js"></script>
+<!-- JavaScript Include -->
+<script src="js/contact-form.js"></script>

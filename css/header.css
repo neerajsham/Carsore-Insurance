@@ -303,6 +303,7 @@
   -webkit-transition: all 500ms ease;
   -ms-transition: all 500ms ease;
   -o-transition: all 500ms ease;
+  gap: 1em;
 }
 
 .main-header .main-menu .navigation > li > ul > li > a:before {

@@ -59,6 +59,90 @@
     });
   }
 
+
+
+  // Popup JS Start
+  // Insurance Popup Handler - Complete Working Code
+  (function () {
+    'use strict';
+
+    // Function to open popup
+    function nrjOpenPopupNpj(type) {
+      var popupId = 'nsjPopup' + type.charAt(0).toUpperCase() + type.slice(1);
+      var popup = document.getElementById(popupId);
+      if (popup) {
+        popup.classList.add('nrjActiveNpj');
+        document.body.style.overflow = 'hidden';
+      }
+    }
+
+    // Function to close popup
+    function nrjClosePopupNpj(type) {
+      var popupId = 'nsjPopup' + type.charAt(0).toUpperCase() + type.slice(1);
+      var popup = document.getElementById(popupId);
+      if (popup) {
+        popup.classList.remove('nrjActiveNpj');
+        document.body.style.overflow = 'auto';
+      }
+    }
+
+    // Initialize when DOM is ready
+    function nrjInitPopupsNpj() {
+      // Add click events to all Learn More buttons
+      var buttons = document.querySelectorAll('.nrjCardBtnNpj');
+      for (var i = 0; i < buttons.length; i++) {
+        buttons[i].addEventListener('click', function () {
+          var popupType = this.getAttribute('data-popup');
+          nrjOpenPopupNpj(popupType);
+        });
+      }
+
+      // Add click events to close buttons
+      var closeButtons = document.querySelectorAll('.nrjPopupCloseNpj');
+      for (var i = 0; i < closeButtons.length; i++) {
+        closeButtons[i].addEventListener('click', function () {
+          var closeType = this.getAttribute('data-close');
+          nrjClosePopupNpj(closeType);
+        });
+      }
+
+      // Add click events to overlays
+      var overlays = document.querySelectorAll('.nrjPopupOverlayNpj');
+      for (var i = 0; i < overlays.length; i++) {
+        overlays[i].addEventListener('click', function (event) {
+          if (event.target === this) {
+            this.classList.remove('nrjActiveNpj');
+            document.body.style.overflow = 'auto';
+          }
+        });
+      }
+
+      // Close popup on ESC key
+      document.addEventListener('keydown', function (event) {
+        if (event.key === 'Escape' || event.keyCode === 27) {
+          var activePopup = document.querySelector('.nrjPopupOverlayNpj.nrjActiveNpj');
+          if (activePopup) {
+            activePopup.classList.remove('nrjActiveNpj');
+            document.body.style.overflow = 'auto';
+          }
+        }
+      });
+    }
+
+    // Run when DOM is ready
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', nrjInitPopupsNpj);
+    } else {
+      nrjInitPopupsNpj();
+    }
+  })();
+
+
+
+
+
+
+
   //Mobile Nav Hide Show
   if ($(".mobile-menu").length) {
     $(".mobile-menu .menu-box").mCustomScrollbar();
@@ -199,30 +283,23 @@
       nav: true,
       autoHeight: true,
       smartSpeed: 500,
-      //   autoplay: 6000,
+      autoplay: true,           // Enable autoplay
+      autoplayTimeout: 4000,    // Slide change interval (6 seconds)
+      autoplayHoverPause: true, // Pause on hover
       navText: [
         '<span class="flaticon-back"></span>',
         '<span class="flaticon-next-1"></span>',
       ],
       responsive: {
-        0: {
-          items: 1,
-        },
-        600: {
-          items: 1,
-        },
-        800: {
-          items: 1,
-        },
-        1024: {
-          items: 1,
-        },
-        1200: {
-          items: 1,
-        },
+        0: { items: 1 },
+        600: { items: 1 },
+        800: { items: 1 },
+        1024: { items: 1 },
+        1200: { items: 1 },
       },
     });
   }
+
 
   // Single Item Carousel
   if ($(".single-item-carousel").length) {
@@ -550,27 +627,28 @@
       }
     );
   }
-  
-  
+
+
   /* ==========================================================================
    copyright year change
-   ========================================================================== */	
-	
-function walkText(node) {
-		
-	var	date = (new Date()).getFullYear();
+   ========================================================================== */
 
-  if (node.nodeType == 3) {
-    node.data = node.data.replace(/2021/g, date);
-  }
-  if (node.nodeType == 1 && node.nodeName != "SCRIPT") {
-    for (var i = 0; i < node.childNodes.length; i++) {
-      walkText(node.childNodes[i]);
+  function walkText(node) {
+
+    var date = (new Date()).getFullYear();
+
+    if (node.nodeType == 3) {
+      node.data = node.data.replace(/2021/g, date);
+    }
+    if (node.nodeType == 1 && node.nodeName != "SCRIPT") {
+      for (var i = 0; i < node.childNodes.length; i++) {
+        walkText(node.childNodes[i]);
+      }
     }
   }
-}
-var copyrightReplace = document.querySelector('.copyright');
-walkText(copyrightReplace);
-  
-  
+  var copyrightReplace = document.querySelector('.copyright');
+  walkText(copyrightReplace);
+
+
 })(window.jQuery);
+  
